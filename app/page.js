@@ -3,7 +3,8 @@ import styles from "./page.module.css";
 import { useState } from "react";
 
 export default function Home() {
-  let hj12 = "";
+  let hj1 = "";
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
