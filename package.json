@@ -7,11 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "prepare": "husky"
   },
   "dependencies": {
     "-": "^0.0.1",
-    "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "next": "14.2.4",
     "prettier": "^3.3.2",
@@ -21,7 +22,8 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "eslint-config-next": "14.2.4",
+    "husky": "^9.0.11"
   },
   "lint-staged": {
     "*.{js,jsx}": "eslint --fix",
